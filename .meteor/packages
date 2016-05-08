@@ -21,7 +21,6 @@ iron:router
 bootswatch:superhero
 momentjs:moment
 mrt:cheerio
-isotope:isotope
 fortawesome:fontawesome
 peppelg:bootstrap-3-modal
 barbatus:stars-rating
