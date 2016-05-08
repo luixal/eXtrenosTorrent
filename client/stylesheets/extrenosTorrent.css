@@ -1,0 +1,31 @@
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+
+.row {
+  -moz-column-width: 33em;
+  -webkit-column-width: 33em;
+  -moz-column-gap: .5em;
+  -webkit-column-gap: .5em;
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+.panel {
+  display: inline-block;
+  margin:  .5em;
+  padding:  0;
+  width:98%;
+}
+
+.navbar-right>li>a:hover, .navbar-right>li>a:focus{
+  background-color: transparent !important;
+}
+
+.list-group-item.zero-padding {
+  padding: 0px 0px;
+}
+
+.over, .stars-rating {
+  position: relative;
+  z-index: 9;
+}

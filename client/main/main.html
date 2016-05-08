@@ -1,0 +1,31 @@
+<template name="main">
+  <div class="row">
+  {{#each torrents}}
+    {{> torrent}}
+  {{/each}}
+  </div>
+</template>
+
+<template name="torrent">
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+      <span class="lead text-primary">{{title}}</span>
+      <span class="lead {{ratingTextClass imdb.rating}} pull-right">
+        <strong>{{imdb.rating}}</strong>
+      </span>
+    </div>
+
+    <div class="panel-body">
+      <img class="pull-left" src="{{pic}}" style="height=100%; padding:0.5em;">
+      <p>{{description}}</p>
+    </div>
+
+    <div class="panel-footer">
+      <a href="{{downloadLink}}" class="{{downloadClass downloadLink}}"><i class="{{downloadIcon downloadLink}}" aria-hidden="true"></i><strong> {{downloadText downloadLink}}</strong></a>
+      {{#if imdb}}<a href="#" class="btn btn-sm btn-warning" id="info"><i class="fa fa-info-circle" aria-hidden="true"></i><strong> Info</strong></a>{{/if}}
+      <span class="pull-right btn btn-sm btn-default">{{date createdAt}}</span>
+    </div>
+
+  </div>
+</template>
